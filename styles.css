@@ -687,3 +687,43 @@ button {
     flex-direction: column;
   }
 }
+/* ===== FEATURE SCROLLER ===== */
+
+.scroll-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 3.75rem;
+}
+
+/* Scrollbar styling */
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: var(--accent-red);
+  border-radius: 10px;
+}
+
+/* Cards behave like slides */
+.benefit-card {
+  position: relative !important;
+  min-width: 80%;
+  height: 50rem;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* remove absolute stacking */
+.benefit-track {
+  position: relative !important;
+  min-height: auto !important;
+}

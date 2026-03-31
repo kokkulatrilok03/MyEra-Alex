@@ -1,236 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Demo</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Michroma&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business One</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  
+  </head>
 <body>
 <div class="page-shell">
 
-  <!-- HERO -->
-  <header class="hero section section-dark">
-    <nav class="topbar">
-      <a class="brand" href="#">PROJECT 1</a>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Products</a>
-      </div>
-      <a class="cart-link" href="#">CART (00)</a>
-    </nav>
+<header class="hero section section-dark">
+<nav class="topbar">
+<a class="brand" href="#hero">BUSINESS ONE</a>
+<div class="nav-links">
+<a href="#hero">Home</a>
+<a href="#story">About</a>
+<a href="#products">Shop</a>
+</div>
+<a class="cart-link" href="#footer">CART (00)</a>
+</nav>
 
-    <div class="hero-media">
-      <img src="https://picsum.photos/1600/900?random=1">
-      <div class="hero-overlay"></div>
-    </div>
-
-    <div class="hero-content">
-      <h1>Project 1 Heading Title <span>Always.</span></h1>
-      <div class="hero-actions">
-        <a class="button button-solid" href="#">Action 1</a>
-        <a class="button button-outline" href="#">Action 2</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- STORY -->
-    <section class="section section-dark story">
-      <div class="story-media">
-        <img src="https://picsum.photos/800/600?random=2">
-        <div class="story-overlay"></div>
-      </div>
-
-      <div class="story-copy">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Project 1 provides dummy
-          description content for testing layouts and UI alignment. 
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Project 2 extends
-            placeholder text for realistic UI representation.
-          </span>
-        </p>
-      </div>
-    </section>
-
-    <!-- INTRO -->
-    <section class="section section-light intro-panel">
-      <div class="intro-copy">
-        <p class="eyebrow">System Overview</p>
-        <h2>Project 1 <span>Project 2</span> Dummy Section</h2>
-      </div>
-    </section>
-
-    <!-- PRODUCTS -->
-    <section class="section section-light product-grid">
-
-      <!-- PRODUCT 1 -->
-      <article class="product-card product-card-red">
-        <div class="product-copy">
-          <p class="eyebrow">Product 1</p>
-          <h3>Project Product 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Product 1 description
-            with dummy content for UI testing.
-          </p>
-          <a class="button button-dark" href="#">Buy Now</a>
-        </div>
-        <div class="product-image">
-          <img src="https://picsum.photos/400/400?random=3">
-        </div>
-      </article>
-
-      <!-- PRODUCT 2 -->
-      <article class="product-card product-card-green">
-        <div class="product-copy">
-          <p class="eyebrow">Product 2</p>
-          <h3>Project Product 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Product 2 dummy
-            paragraph for layout validation.
-          </p>
-          <a class="button button-dark" href="#">Buy Now</a>
-        </div>
-        <div class="product-image">
-          <img src="https://picsum.photos/400/400?random=4">
-        </div>
-      </article>
-
-    </section>
-
-    <!-- SPECS -->
-    <section class="section section-dark specs">
-      <div class="section-heading">
-        <h2>Specifications</h2>
-      </div>
-
-      <div class="spec-grid">
-        <dl class="spec-list is-active">
-          <div><dt>Property 1</dt><dd>Value 1</dd></div>
-          <div><dt>Property 2</dt><dd>Value 2</dd></div>
-          <div><dt>Property 3</dt><dd>Value 3</dd></div>
-          <div><dt>Property 4</dt><dd>Value 4</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- BENEFITS -->
-    <section class="section section-dark benefits">
-
-      <div class="benefit-track">
-
-        <article class="benefit-card is-active">
-          <img src="https://picsum.photos/600/400?random=5">
-          <div class="benefit-overlay"></div>
-          <div class="benefit-copy">
-            <h3>Benefit 1 Title</h3>
-            <p>Lorem ipsum dummy content for benefit section 1.</p>
-          </div>
-        </article>
-
-        <article class="benefit-card">
-          <img src="https://picsum.photos/600/400?random=6">
-          <div class="benefit-overlay"></div>
-          <div class="benefit-copy">
-            <h3>Benefit 2 Title</h3>
-            <p>Lorem ipsum dummy content for benefit section 2.</p>
-          </div>
-        </article>
-
-      </div>
-
-    </section>
-
-    <!-- METRICS -->
-    <section class="section section-light metrics">
-      <div class="metric-grid">
-
-        <article>
-          <strong>100+</strong>
-          <h3>Metric 1</h3>
-          <p>Lorem ipsum dummy metric description.</p>
-        </article>
-
-        <article>
-          <strong>200+</strong>
-          <h3>Metric 2</h3>
-          <p>Lorem ipsum dummy metric description.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ARTICLES -->
-    <section class="section section-dark knowledge">
-
-      <div class="article-grid">
-
-        <article class="article-card">
-          <img src="https://picsum.photos/400/300?random=7">
-          <div class="article-overlay"></div>
-          <div class="article-copy">
-            <h3>Article 1</h3>
-            <p>Lorem ipsum dummy article content.</p>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <img src="https://picsum.photos/400/300?random=8">
-          <div class="article-overlay"></div>
-          <div class="article-copy">
-            <h3>Article 2</h3>
-            <p>Lorem ipsum dummy article content.</p>
-          </div>
-        </article>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="section section-light footer">
-    <div class="footer-top">
-
-      <div>
-        <p class="footer-label">Contact</p>
-        <a href="#">email@example.com</a>
-        <p>Address Line Here</p>
-      </div>
-
-      <div>
-        <p class="footer-label">Links</p>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Products</a>
-      </div>
-
-      <div>
-        <p class="footer-label">Social</p>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-      </div>
-
-    </div>
-
-    <div class="footer-mark">PROJECT 1</div>
-
-    <div class="footer-bottom">
-      <span>© 2026 Project</span>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-    </div>
-  </footer>
-
+<div class="hero-media">
+  <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+<div class="hero-overlay"></div>
 </div>
 
+<div class="hero-content" id="hero">
+<h1>Product System Monitoring <span>Always Active</span></h1>
+<div class="hero-actions">
+<a class="button button-solid" href="#footer">Enquire Now</a>
+<a class="button button-outline" href="#products">Explore Products</a>
+</div>
+</div>
+</header>
+
+<main>
+
+<section class="section section-dark story" id="story">
+<div class="story-media">
+  <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" alt="">
+<div class="story-overlay"></div>
+</div>
+
+<div class="story-copy">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+<span>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</span>
+</p>
+</div>
+</section>
+
+<section class="section section-light intro-panel">
+<div class="intro-copy">
+<p class="eyebrow">System Overview</p>
+<h2>Introducing <span>Product 1 & Product 2</span></h2>
+</div>
+</section>
+
+<section class="section section-light product-grid" id="products">
+
+<article class="product-card product-card-red">
+<div class="product-copy">
+<p class="eyebrow">Category One</p>
+<h3>Product 1</h3>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+</p>
+<a class="button button-dark" href="#footer">Buy Now</a>
+</div>
+
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1493238792000-8113da705763">
+</div>
+</article>
+
+<article class="product-card product-card-green">
+<div class="product-copy">
+<p class="eyebrow">Category Two</p>
+<h3>Product 2</h3>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur.
+</p>
+<a class="button button-dark" href="#footer">Buy Now</a>
+</div>
+
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+</div>
+</article>
+
+</section>
+
+<section class="section section-dark specs">
+<div class="section-heading">
+<h2>Specifications</h2>
+
+<div class="spec-tabs">
+<button class="spec-tab is-active" data-spec-target="red">Product 1</button>
+<button class="spec-tab" data-spec-target="green">Product 2</button>
+</div>
+</div>
+
+<div class="spec-grid">
+
+<dl class="spec-list is-active" data-spec-panel="red">
+<div><dt>Length</dt><dd>200 mm</dd></div>
+<div><dt>Weight</dt><dd>500 gm</dd></div>
+<div><dt>Material</dt><dd>Carbon Fiber</dd></div>
+<div><dt>Life Cycle</dt><dd>12 months</dd></div>
+</dl>
+
+<dl class="spec-list" data-spec-panel="green">
+<div><dt>Length</dt><dd>210 mm</dd></div>
+<div><dt>Weight</dt><dd>520 gm</dd></div>
+<div><dt>Material</dt><dd>Alloy Steel</dd></div>
+<div><dt>Life Cycle</dt><dd>10 months</dd></div>
+</dl>
+<dl class="spec-list is-active" data-spec-panel="red">
+  <div><dt>Length</dt><dd>200 mm</dd></div>
+  <div><dt>Weight</dt><dd>500 gm</dd></div>
+  <div><dt>Material</dt><dd>Carbon Fiber</dd></div>
+  <div><dt>Life Cycle</dt><dd>12 months</dd></div>
+  </dl>
+  
+  <dl class="spec-list" data-spec-panel="green">
+  <div><dt>Length</dt><dd>210 mm</dd></div>
+  <div><dt>Weight</dt><dd>520 gm</dd></div>
+  <div><dt>Material</dt><dd>Alloy Steel</dd></div>
+  <div><dt>Life Cycle</dt><dd>10 months</dd></div>
+  </dl>
+  
+</div>
+</section>
+
+<section class="section section-dark benefits">
+
+  <div class="benefit-track scroll-container">
+
+    <article class="benefit-card">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+      <div class="benefit-overlay"></div>
+      <div class="benefit-copy">
+        <h3>Feature 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </article>
+  
+    <article class="benefit-card">
+      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+      <div class="benefit-overlay"></div>
+      <div class="benefit-copy">
+        <h3>Feature 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </article>
+  
+    <article class="benefit-card">
+      <img src="https://images.unsplash.com/photo-1483721310020-03333e577078">
+      <div class="benefit-overlay"></div>
+      <div class="benefit-copy">
+        <h3>Feature 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </article>
+  
+    <article class="benefit-card">
+      <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8">
+      <div class="benefit-overlay"></div>
+      <div class="benefit-copy">
+        <h3>Feature 4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </article>
+  
+  </div>
+
+</section>
+
+<section class="section section-light metrics">
+<div class="section-heading">
+<h2>Performance Metrics</h2>
+</div>
+
+<div class="metric-grid">
+<article>
+<strong>10+</strong>
+<h3>Projects</h3>
+<p>Lorem ipsum dolor sit amet.</p>
+</article>
+
+<article>
+<strong>50K+</strong>
+<h3>Usage Cycles</h3>
+<p>Lorem ipsum dolor sit amet.</p>
+</article>
+
+<article>
+<strong>0</strong>
+<h3>Failures</h3>
+<p>Lorem ipsum dolor sit amet.</p>
+</article>
+</div>
+</section>
+
+<section class="section section-dark knowledge">
+
+<div class="section-heading">
+<h2>Articles</h2>
+</div>
+
+<div class="article-grid">
+
+<article class="article-card">
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+<div class="article-overlay"></div>
+<div class="article-copy">
+<h3>Article 1</h3>
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+</article>
+
+<article class="article-card">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<div class="article-overlay"></div>
+<div class="article-copy">
+<h3>Article 2</h3>
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+</article>
+
+<article class="article-card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<div class="article-overlay"></div>
+<div class="article-copy">
+<h3>Article 3</h3>
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+</article>
+
+</div>
+</section>
+
+</main>
+
+<footer class="section section-light footer" id="footer">
+
+<div class="footer-top">
+<div>
+<p class="footer-label">Contact</p>
+<a href="#">info@businessone.com</a>
+<p>Address Placeholder</p>
+</div>
+
+<div>
+<p class="footer-label">Links</p>
+<a href="#hero">Home</a>
+<a href="#story">About</a>
+<a href="#products">Shop</a>
+</div>
+
+<div>
+<p class="footer-label">Social</p>
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+<a href="#">Facebook</a>
+</div>
+</div>
+
+<div class="footer-mark">BUSINESS ONE</div>
+
+<div class="footer-bottom">
+<span>©2026 BUSINESS ONE</span>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms</a>
 <script src="./script.js"></script>
 </body>
 </html>
