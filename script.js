@@ -1,37 +1,43 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Specification Tabs Logic
-  const specTabs = document.querySelectorAll(".spec-tab");
-  const specPanels = document.querySelectorAll(".spec-list");
+  const section = document.getElementById("featureSection");
+  const track = document.getElementById("horizontalTrack");
+  const tabs = document.querySelectorAll(".tab-item");
 
-  specTabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-          const target = tab.dataset.specTarget;
+  const totalSlides = 4;
 
-          specTabs.forEach(t => t.classList.remove("is-active"));
-          tab.classList.add("is-active");
+  function animateScroll() {
+    if (!section || !track) return;
 
-          specPanels.forEach(panel => {
-              panel.classList.toggle("is-active", panel.dataset.specPanel === target);
-          });
-      });
-  });
+    const rect = section.getBoundingClientRect();
+    const sectionHeight = section.offsetHeight;
+    const viewportHeight = window.innerHeight;
 
-  // 2. Benefits / Features Logic
-  const benefitMarkers = document.querySelectorAll(".benefit-marker");
-  const benefitCards = document.querySelectorAll(".benefit-card");
+    const end = sectionHeight - viewportHeight;
 
-  benefitMarkers.forEach((marker) => {
-      marker.addEventListener("click", () => {
-          const targetIndex = parseInt(marker.dataset.benefitIndex);
+    const scrollInside = Math.min(
+      Math.max(-rect.top, 0),
+      end
+    );
 
-          // Update markers
-          benefitMarkers.forEach(m => m.classList.remove("is-active"));
-          marker.classList.add("is-active");
+    const progress = end === 0 ? 0 : scrollInside / end;
 
-          // Update cards
-          benefitCards.forEach((card, index) => {
-              card.classList.toggle("is-active", index === targetIndex);
-          });
-      });
-  });
+    const move = Math.min(Math.max(progress * 300, 0), 300);
+
+    const moveRounded = Math.round(move * 1000) / 1000;
+
+    track.style.transform = `translate3d(-${moveRounded}vw, 0, 0)`;
+
+    const activeIndex = Math.min(
+      Math.floor(progress * totalSlides),
+      totalSlides - 1
+    );
+
+    tabs.forEach((tab, i) => {
+      tab.classList.toggle("is-active", i === activeIndex);
+    });
+
+    requestAnimationFrame(animateScroll);
+  }
+
+  requestAnimationFrame(animateScroll);
 });
