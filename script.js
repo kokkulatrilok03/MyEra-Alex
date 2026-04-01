@@ -41,3 +41,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   requestAnimationFrame(animateScroll);
 });
+document.addEventListener("DOMContentLoaded", () => {
+
+  const specTabs = document.querySelectorAll(".spec-tab");
+  const specPanels = document.querySelectorAll(".spec-list");
+
+  specTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+
+      const target = tab.dataset.specTarget;
+
+      // remove active from all tabs
+      specTabs.forEach(t => t.classList.remove("is-active"));
+
+      // add active to clicked tab
+      tab.classList.add("is-active");
+
+      // hide all panels
+      specPanels.forEach(panel => {
+        panel.classList.remove("is-active");
+      });
+
+      // show correct panel
+      const activePanel = document.querySelector(
+        `.spec-list[data-spec-panel="${target}"]`
+      );
+
+      if (activePanel) {
+        activePanel.classList.add("is-active");
+      }
+
+    });
+  });
+
+});
